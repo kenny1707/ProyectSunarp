@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ByCapitalPageComponent } from './pages/by-capital-page/by-capital-page.component';
+import { CreacionMDAComponent } from './pages/creacion-mda/creacion-mda.component';
 import { ByCountryPageComponent } from './pages/by-country-page/by-country-page.component';
 import { ByRegionPageComponent } from './pages/by-region-page/by-region-page.component';
 import { CountryPageComponent } from './pages/country-page/country-page.component';
 
 const routes: Routes = [
   {
-    path: 'by-capital',
-    component: ByCapitalPageComponent
+    path: 'creacion-mda',
+    component: CreacionMDAComponent
   },
   {
     path: 'by-country',
@@ -25,7 +25,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'by-capital'
+    redirectTo: 'uti/accesos/creacion-mda'
   }
 ]
 
@@ -37,4 +37,4 @@ const routes: Routes = [
     RouterModule
   ]
 })
-export class CountriesRoutingModule { }
+export class AccesosRoutingModule { }

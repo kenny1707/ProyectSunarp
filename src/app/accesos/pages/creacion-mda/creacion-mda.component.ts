@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { CountriesService } from '../../services/countries.service';
+import { CountriesService } from '../../services/accesos.service';
 import { Country } from '../../interfaces/country';
 
 @Component({
-  selector: 'app-by-capital-page',
-  templateUrl: './by-capital-page.component.html',
+  selector: 'creacion-mda-page',
+  templateUrl: './creacion-mda.component.html',
   styles: ``
 })
-export class ByCapitalPageComponent implements OnInit {
+export class CreacionMDAComponent implements OnInit {
 
   public countries: Country[] = []
   public isLoading: boolean = false;
